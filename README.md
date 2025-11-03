@@ -10,6 +10,15 @@ Pequeña landing page que incluye una cabecera con logo, hero (imagen destacada)
 
 ## Cambios principales (resumen por archivo)
 
+- index.html — 02/11/2025
+	- Integración y cambio en los <div>, separando por secciones y así integrar de mejor manera los cambios en el `css/styles.css`
+	<section class="section-one">
+    <section class="section-two">
+	- Se integra dentro de la <section class="section-two"> una nueva continuación de la landing page, para mostrar una lista <ul>, con check, y además de una nueva imagen con subtitulos.
+- css/styles.css
+	- Cambios en las etiquetas para integrar de mejor manera las <section> y agregar nuevos elementos de responsive.
+
+
 - css/styles.css-index.html — 29/10/2025 
     - Actualización de estilos y estructura de la landing; responsive y componentes principales. — `index.html`, `css/styles.css`
 
@@ -25,6 +34,7 @@ Pequeña landing page que incluye una cabecera con logo, hero (imagen destacada)
 		- `.componentTestimonial`: diseño del testimonial con avatar, grupo de estrellas y texto.
 		- `.heroImage`: imagen destacada posicionada en desktop (position: absolute; left: 800px) y adaptada responsive en móvil/tablet.
 	- Reglas responsive para 1024px, 768px y 480px ajustando fuentes, layout y comportamiento del hero y testimonial.
+
 
 - index.html — 23/10/2025
 	- Estructura principal añadida o actualizada:
