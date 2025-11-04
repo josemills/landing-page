@@ -77,8 +77,7 @@ header .brand {
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem 1rem;
-    border-style: solid;
-    border-color: var(--neutral-900);
+    border: solid 1px var(--neutral-900);
     background: transparent;
     border-radius: 8px;
     color: var(--neutral-900);
@@ -171,7 +170,7 @@ header .brand {
 
 .subtitleTwo {
     font-family: 'Martian Mono';
-    font-size: 40px;
+    font-size: 35px;
     color: var(--neutral-900);
     font-weight: 600;
     letter-spacing: 2px;
@@ -191,12 +190,30 @@ header .brand {
 .contentTextTwo {
     font-family: 'Inter';
     margin-top: 100px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 140%;
     letter-spacing: 1px;
     color: var(--neutral-900);
     position: absolute;
     left: 500px;
+}
+
+.contentTextTwo ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.contentTextTwo ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.contentTextTwo ul li img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Secciones base */
@@ -218,15 +235,8 @@ header .brand {
 
 /* Tablets (≤ 1024px) */
 @media (max-width: 1024px) {
-    #title {
-        font-size: 48px;
-    }
-
-    .contentText {
-        font-size: 18px;
-        max-width: 90%;
-    }
-
+    #title { font-size: 48px; }
+    .contentText { font-size: 18px; max-width: 90%; }
     .heroImage {
         position: static;
         width: 100%;
@@ -234,33 +244,32 @@ header .brand {
         border-radius: 12px;
         margin-top: 24px;
     }
-
     .mainContainer {
         align-items: center;
         text-align: center;
         padding: 0 24px;
     }
-
     .primaryButton {
         font-size: 16px;
         padding: 0.6rem 0.9rem;
     }
-
-    /* Segunda parte */
     .subtitleTwo {
         position: static;
         text-align: center;
         font-size: 32px;
         margin-top: 20px;
     }
-
     .imageOne {
         position: static;
         width: 80%;
         margin: 0 auto;
         display: block;
     }
-
+    .contentTextTwo {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
     .mainContainerTwo {
         align-items: center;
         gap: 60px;
@@ -269,53 +278,39 @@ header .brand {
 
 /* Móviles grandes (≤ 768px) */
 @media (max-width: 768px) {
-    #title {
-        font-size: 40px;
-    }
-
-    .contentText {
-        font-size: 16px;
-    }
-
+    #title { font-size: 40px; }
+    .contentText { font-size: 16px; }
     .heroImage {
         width: 90%;
         height: auto;
         margin: 0 auto;
         display: block;
     }
-
     .componentTestimonial {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
-    .componentTestimonial .meta {
-        align-items: center;
-    }
-
+    .componentTestimonial .meta { align-items: center; }
     .primaryButton {
         width: 100%;
         justify-content: center;
     }
-
-    /* Segunda parte */
     .subtitleTwo {
         font-size: 28px;
         text-align: center;
         margin-bottom: 12px;
     }
-
     .imageOne {
         width: 90%;
         margin: 0 auto;
     }
-
     .mainContainerTwo {
         text-align: center;
         gap: 40px;
         padding: 0 24px;
     }
+    .contentTextTwo { font-size: 16px; }
 }
 
 /* Móviles pequeños (≤ 480px) */
@@ -324,50 +319,39 @@ header .brand {
         font-size: 32px;
         letter-spacing: 1px;
     }
-
-    .contentText {
-        font-size: 15px;
-    }
-
-    .heroImage {
-        width: 100%;
-        height: auto;
-    }
-
+    .contentText { font-size: 15px; }
+    .heroImage { width: 100%; height: auto; }
     .componentTestimonial {
         gap: 8px;
         align-items: center;
     }
-
     .componentTestimonial .meta {
         align-items: center;
         text-align: center;
     }
-
     .componentTestimonial .starGroup {
         justify-content: center;
         margin-bottom: 6px;
     }
-
     .primaryButton {
         font-size: 14px;
         padding: 0.5rem 0.8rem;
     }
-
-    /* Segunda parte */
     .subtitleTwo {
         font-size: 24px;
         text-align: center;
     }
-
     .imageOne {
         width: 100%;
         height: auto;
     }
-
     .mainContainerTwo {
         gap: 32px;
         padding: 0 16px;
         align-items: center;
+    }
+    .contentTextTwo {
+        font-size: 14px;
+        line-height: 130%;
     }
 }
