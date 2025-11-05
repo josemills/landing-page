@@ -6,9 +6,11 @@
 
 ## Descripción corta
 
-Pequeña landing page que incluye una cabecera con logo, hero (imagen destacada), texto de bienvenida, botón CTA y un componente testimonial con avatar y estrellas.
 
 ## Cambios principales (resumen por archivo)
+
+- css/styles.css — 03/11/2025
+	- Alineación entre los íconos y el texto, creando una lista más ordenada y profesional. Los íconos ahora estarán perfectamente centrados con respecto al texto. `css/styles.css`
 
 - index.html — 02/11/2025
 	- Integración y cambio en los <div>, separando por secciones y así integrar de mejor manera los cambios en el `css/styles.css`
