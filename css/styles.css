@@ -89,6 +89,245 @@ header .brand {
 .number {display: flex; align-items: center; justify-content: center; width: 40px;height: 40px;padding: 0; border: 2px solid var(--neutral-900);border-radius: 4px;font-family: 'Martian Mono';font-size: 18px;font-weight: 500;box-sizing: border-box;margin: 0 0 20px 0;}
 .step {font-family: 'Martian Mono';font-size: 14px;font-weight: 600;display: block;}
 
+/* ──────────────────────────────── */
+/*          Section Five            */
+/* ──────────────────────────────── */
+
+.section-five {background-color: var(--white);min-height: 100vh;padding: 4rem 0;}
+.subtitleFive {font-family: 'Martian Mono';font-size: 40px;color: var(--neutral-900);font-weight: 700;letter-spacing: 2px;position: relative;top: 10px;left: 50%;transform: translateX(-50%);text-align: center;}
+.mainContainerFive {max-width: 1100px;margin: 0 auto;display: flex;flex-direction:row;align-items: center;position: relative;justify-content: center;gap: 32px;margin-top: 64px;}
+.optionMembership {font-family: 'Martian Mono'; width: 250px;height: 320px; border: var(--neutral-200);border-style: solid;border-radius: 8px;padding: 12px 24px;list-style: none;}
+.optionMembership p {font-family: 'Martian Mono';font-size: 14px;font-weight: 300;display: flex;align-items: center;margin-bottom: 16px;gap: 12px;}
+.mainContainerFive .optionMembership:nth-child(2) {width: 300px;height: 350px;background-image: url('../assets/icons/pattern-glow.svg');background-repeat: no-repeat;background-size: cover;position: relative;background-color: var(--light-salmon-50);}
+.mainContainerFive .optionMembership:nth-child(2) .subscribeButton {width: 250px;height: 45px;margin-top: 30px;}
+.titleMembership {font-size: 26px;}
+.priceMembership {font-size:30px;font-weight: 600;}
+.subscribeButton {font-family: 'Martian Mono';font-weight: 600;color: var(--neutral-900);background-color: var(--light-salmon-50);display: block;width: 200px;height: 45px;border-radius:8px;margin: 0 auto;letter-spacing: -1px;}
+.subscribeButton:hover,
+.subscribeButton:focus {
+    background: linear-gradient(90deg, var(--light-salmon-100) 
+                0%, var(--white) 100%);
+}
+
+/* ========== RESPONSIVE SECTION FIVE ========== */
+@media (max-width: 768px) {
+
+    .subtitleFive {
+        font-size: 28px;
+        top: 0;
+        left: 0;
+        transform: none;
+        text-align: left;
+        padding: 0 20px;
+        margin-bottom: 32px;
+    }
+
+    .section-five {
+        padding: 2rem 0;
+    }
+
+    .mainContainerFive {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 24px;
+        padding: 0 20px;
+        margin-top: 32px;
+    }
+
+    .optionMembership {
+        width: 100%;
+        height: auto;
+        padding: 16px 20px;
+    }
+
+    .mainContainerFive .optionMembership:nth-child(2) {
+        width: 100%;
+        height: auto;
+        background-size: contain;
+        background-position: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .mainContainerFive .optionMembership:nth-child(2) .subscribeButton {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .subscribeButton {
+        width: 100%;
+    }
+
+    /* Si tienes flecha naranja */
+    .orange-arrow {
+        display: none !important;
+    }
+}
+
+
+/* ──────────────────────────────── */
+/*          Section Six             */
+/* ──────────────────────────────── */
+
+.section-six{
+    background-color: var(--white);
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.reviewOpinion {
+    font-family: 'Martian Mono';
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;         
+    margin: 0 auto;     
+}
+
+.authorInfo {
+    font-family: 'Martian Mono';
+    font-weight: 200;
+}
+
+/* ──────────────────────────────── */
+/*        Section Seven (FOOTER)    */
+/* ──────────────────────────────── */
+
+.section-seven{
+    background: var(--neutral-900);
+    background-image: url('../assets/icons/pattern-light-bg.svg');
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 8px;
+}
+
+.subtitleFooter {
+    color: var(--white);
+    font-family: 'Martian Mono';
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;         
+    margin: 10px auto;  
+}
+
+.secundaryButton {
+    margin: 20px auto;
+    font-family: 'Martian Mono';
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: solid 1px var(--white);
+    background: transparent;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.secundaryButton .btnIconTwo {
+    width: 3rem;
+    height: 2rem;
+    display: inline-block;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: brightness(100);
+}
+
+.secundaryButton:hover,
+.secundaryButton:focus {
+    background: linear-gradient(5deg, var(--neutral-100), rgba(255, 255, 255, 0.0));
+
+}
+
+
+.componentTestimonial :nth-child(2) .testimonialText {
+    font-family: 'Martian Mono';
+    font-size: 14px;
+    color: var(--white);
+    line-height: 120%;
+}
+
+.section-seven hr {
+    height: 2px;
+    border: none;
+    margin-top: 20px;
+    width: 200vh;
+    background-color: var(--neutral-700);
+}
+
+.dataFooter {
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 160vh;
+}
+
+/* ========= RESPONSIVE SECTION SEVEN ========= */
+@media (max-width: 768px) {
+
+    .section-seven {
+        padding: 30px 20px;
+        gap: 24px;
+        background-size: contain;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .subtitleFooter {
+        font-size: 28px;
+        text-align: left;
+        margin: 0;
+        padding-right: 20px;
+    }
+
+    .secundaryButton {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 16px;
+        margin: 10px 0;
+    }
+
+    .secundaryButton .btnIconTwo {
+        width: 2rem;
+        height: 1.5rem;
+    }
+
+    /* HR ajustado al contenedor, no 200vh */
+    .section-seven hr {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* Footer reorganizado */
+    .dataFooter {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* ──────────────────────────────── */
 /* 📱 RESPONSIVE DESIGN */
@@ -166,9 +405,7 @@ header .brand {
         font-size: 16px;
     }
     .logosTech {
-        position: static;
-        width: 120px;
-        margin-left: 0;
+        display: none;
     }
 
     /* SECTION FOUR */
@@ -265,8 +502,7 @@ header .brand {
         margin: 0 40px auto;
     }
     .logosTech {
-        width: 100px;
-        margin-left: 0;
+        display: none;
     }
 
     /* SECTION FOUR */
@@ -367,7 +603,7 @@ header .brand {
         margin: 0 20px auto;
     }
     .logosTech {
-        margin-left: 0;
+        display: none;
     }
 
      .subtitleFour {
