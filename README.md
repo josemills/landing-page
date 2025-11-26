@@ -2,12 +2,19 @@
 
 > Breve README que resume los cambios realizados en el HTML y CSS, con fechas y un changelog fácil de extender.
 
-Última actualización: 29 de octubre de 2025
+Última actualización: 25 de noviembre de 2025
 
 ## Descripción corta
 
+Landing page responsiva con secciones modulares, componentes de testimonios, membresías y footer. Diseño moderno con gradientes, animaciones hover y adaptación completa a dispositivos móviles.
 
 ## Cambios principales (resumen por archivo)
+
+- css/styles.css — 25/11/2025
+	- Ajuste de altura en `.heroImage`: cambio de `height: 450px` a `height: auto` para mejor adaptación responsiva.
+	- Limpieza de código: eliminación de clases obsoletas `.orangeArrow` en reglas responsive.
+	- Mejoras en responsive para móviles pequeños (≤480px): alineación a la izquierda del contenido con imagen centrada, padding ajustado y mejor espaciado.
+	- Ajuste en tablet (≤1024px): `.mainContainer` cambia de `align-items: flex-start` a `align-items: center` para mejor centrado visual.
 
 - css/styles.css — 03/11/2025
 	- Alineación entre los íconos y el texto, creando una lista más ordenada y profesional. Los íconos ahora estarán perfectamente centrados con respecto al texto. `css/styles.css`
@@ -44,31 +51,7 @@
 		- Contenedor principal `.mainContainer` con `#title` (título multi-línea), `heroImage` (imagen responsiva), párrafo `.contentText` y botón `.primaryButton` con icono.
 		- Componente de testimonial `.componentTestimonial` con `avatarImage`, `.meta`, `.starGroup` y `.testimonialText`.
 
-## Changelog (formato extendible)
 
-Añade nuevas entradas al final siguiendo el formato:
-
-YYYY-MM-DD — Breve descripción — archivos afectados
-
-Ejemplo actual:
-
-- 2025-10-29 — Actualización de estilos y estructura de la landing; responsive y componentes principales. — `index.html`, `css/styles.css`
-
-### Historial tomado desde git
-
-- 2025-10-28 — Integraciones de CSS: botones, subtítulos, títulos y mejoras responsive. — `index.html`, `css/styles.css`
-- 2025-10-23 — Integración de primeros archivos y carpetas. — `index.html`, `css/styles.css`
-
-## Cómo añadir una nueva entrada
-
-1. Edita `README.md` y añade una línea nueva al final del bloque "Changelog".
-2. Usa la fecha del cambio, un texto breve y los archivos modificados.
-
-Formato sugerido (copiable):
-
-```
-YYYY-MM-DD — Descripción corta del cambio — `ruta/archivo.ext`
-```
 
 
 
